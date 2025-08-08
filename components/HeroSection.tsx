@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <main className="pt-8 md:pt-32 mx-5 md:mx-0">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 md:mb-16">
-        <div className="md:w-1/2 md:space-y-8 flex flex-col">
+        <div className="md:w-1/2 md:space-y-8 flex flex-col animate-fade-in-up delay-100">
           <div className="md:space-y-6">
             <div className="flex items-center gap-4 mb-1 md:mb-6 justify-center md:justify-start">
               <div className="hidden md:block w-16 h-0.5 bg-gray-800"></div>
@@ -16,7 +16,7 @@ export const HeroSection = () => {
 
             <div className="flex items-center gap-4 mb-6 justify-center md:justify-start">
               <h1 className="text-5xl md:text-6xl font-light text-gray-900 leading-tight text-center md:text-left">
-                <span>Smriti</span> <br className="md:hidden" />
+                <span className="">Smriti</span> <br className="md:hidden" />
                 <span className="font-bold">Aryal</span>
               </h1>
             </div>
@@ -81,7 +81,9 @@ export const HeroSection = () => {
       </div>
 
       <div className="text-gray-600 flex items-center justify-center mt-5 md:mt-0 md:justify-between">
-        <ArrowDownIcon />
+        <span className="animate-bounce-down cursor-pointer">
+          <ArrowDownIcon />
+        </span>
         <div className="hidden md:flex items-center gap-10 text-sm">
           <span>2+ years of experience</span>
           <span>Based in Kathmandu, Nepal</span>
